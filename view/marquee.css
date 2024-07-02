@@ -1,0 +1,41 @@
+
+.news {
+  background-color: #29b6f6;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+.news-ticker {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news-ticker span {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.news-ticker ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.news-ticker li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.news-ticker li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.news-ticker li a:hover {
+  color: #ffffff;
+}

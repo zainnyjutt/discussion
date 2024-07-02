@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Discussion</title>
+  <link rel="stylesheet" type="text/css" href="../view/login.css">
+  <script>
+ 
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-form">
+      <h2>Login to Discussion</h2>
+      <form method="POST" action="../controller/login.php">
+        <div class="input-group">
+          <label for="username">Email</label>
+          <input type="text" id="username" placeholder="Enter your Email" name="email" required >
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="signup-link">
+        Don't have an account? <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Common styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* News Card */
+
+.news-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-card img {
+    width: 40%;
+    object-fit: cover;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #1a237e;
+    font-weight: bold;
+}
+
+.news-content p {
+    color: #444;
+    line-height: 1.5;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #0d1452;
+}
+
+/* ... (other styles) ... */

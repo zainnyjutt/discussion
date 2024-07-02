@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+
+.breaking-news {
+  background-color: #29b6f6;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+.ticker span {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.ticker ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.ticker li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.ticker li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ticker li a:hover {
+  color: #ffffff;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.main-content {
+  padding: 40px;
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.news-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.news-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.news-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.news-details p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.news-details a {
+  display: inline-block;
+  background-color: #1a237e;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.news-details a:hover {
+  background-color: #29b6f6;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Additional styling for varied heights of news cards */
+
+.news-card:nth-child(3n + 1) {
+  grid-row-end: span 2;
+}
+
+.news-card:nth-child(4n) {
+  grid-row-end: span 3;
+}
+
+/* Additional styling for varied widths of news cards */
+
+.news-card:nth-child(3n + 1),
+.news-card:nth-child(4n) {
+  grid-column-end: span 2;
+}
+
+
+
+
+
+
+
+.navbar {
+  background-color: #1a237e;
+  color: white;
+  padding: 20px;
+}
+
+.navbar .logo a {
+  font-size: 28px;
+}
+
+.navbar .nav-links {
+  font-size: 20px;
+}
+
+.navbar .profile a {
+  font-size: 20px;
+  padding: 12px 24px;
+}
+
+/* Styles for the slider */
+.slider {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider img {
+  max-width: 100%;
+}

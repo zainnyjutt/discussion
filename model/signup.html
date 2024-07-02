@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - Discussion</title>
+  <link rel="stylesheet" type="text/css" href="../view/signup.css">
+  <!-- Add any additional CSS or font imports here -->
+</head>
+<body>
+  <div class="signup-container">
+    <div class="signup-form">
+      <h2>Welcome to Discussion</h2>
+      <form  method="POST" action="../controller/signup.php" >
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your desired username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email address" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" name="password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="login-link">
+        Already have an account? <a href="login.html">Log In</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

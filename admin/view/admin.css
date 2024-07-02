@@ -1,0 +1,196 @@
+/* Common styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Admin Container */
+
+.admin-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 280px;
+    background-color: #37474f;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-item {
+    padding: 15px 25px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:hover {
+    background-color: #455a64;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    flex: 1;
+}
+
+.menu-item i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.has-submenu > .submenu {
+    display: none;
+    background-color: #263238;
+    padding-left: 25px;
+    border-left: 1px solid #455a64;
+}
+
+.has-submenu:hover > .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px 0;
+}
+
+/* Content */
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logout {
+    margin-left: 90%;
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.logout:hover {
+
+    color: #b71c1c;
+}
+
+/* ... (other styles) ... */
+/* ... (previous CSS code) ... */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-item {
+    padding: 15px 25px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-item:before {
+    content: "\2022"; /* Bullet point character */
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* ... (remaining CSS code) ... */
+/* ... (previous CSS code) ... */
+
+/* Sidebar */
+
+.sidebar {
+    width: 280px;
+    background-color: #263238;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-item {
+    padding: 15px 25px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-left: 5px solid transparent;
+}
+
+.menu-item:hover {
+    background-color: #455a64;
+    border-left-color: #29b6f6;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    flex: 1;
+}
+
+.has-submenu > .submenu {
+    display: none;
+    background-color: #263238;
+    padding-left: 25px;
+    border-left: 5px solid transparent;
+}
+
+.has-submenu:hover > .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px 0;
+}
+
+/* ... (remaining CSS code) ... */
